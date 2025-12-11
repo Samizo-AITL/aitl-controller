@@ -1,55 +1,67 @@
-# 📘 Chapter 1 — Python Baseline Model  
-*PID × FSM × LLM — Behavioral Golden Model*
+# 🧩 Chapter 1 — Python Baseline Model  
+## *AITL Architecture: PID × FSM × LLM*
 
-This directory contains all documentation for **Chapter 1** of the *AITL Silicon Pathway* project.
-
-Chapter 1 establishes the **Python baseline model**, which becomes the golden reference for all downstream hardware flows:
-
-```
-Python → Verilog RTL → OpenLane → Magic RC Extraction → SPICE
-```
+This chapter introduces the foundational Python model of the AITL control architecture.  
+It also links to all detailed documentation pages of Chapter 1.
 
 ---
 
-# 📂 Documentation Contents
+# 📂 Documentation Index
 
 | File | Description |
 |------|-------------|
-| [index.md](index.md) | Chapter 1 entry page |
-| [overview.md](overview.md) | Conceptual explanation of the AITL architecture |
-| [python_model.md](python_model.md) | Technical breakdown of PID/FSM/Controller code |
-| [fsm.md](fsm.md) | Canonical FSM specification (authoritative) |
-| [api.md](api.md) | Public API reference of Chapter1 components |
-| [getting_started.md](getting_started.md) | Setup & simulation guide |
+| [README.md](README.md) | Folder-level introduction |
+| [overview.md](overview.md) | Conceptual explanation of the architecture |
+| [python_model.md](python_model.md) | Code-level explanation of PID / FSM / controller |
+| [fsm.md](fsm.md) | Canonical state machine rules (RTL input) |
+| [api.md](api.md) | Programmatic API reference |
+| [getting_started.md](getting_started.md) | How to install and run Chapter1 code |
 
 ---
 
-# 🧭 Overview
+# 🎯 Objectives of Chapter 1
 
-The Python model defines:
-
-- **PID** — real-time continuous control  
-- **FSM** — supervisory mode management  
-- **LLM** — adaptive intelligence (placeholder in this chapter)  
-
-These components form the hybrid architecture that will later be expressed in hardware.
-
-This chapter produces:
-
-- A reproducible PID/FSM model  
-- Executable simulation scripts  
-- Canonical FSM state rules  
-- Golden outputs for RTL comparison  
+- Understand the three-layer AITL architecture  
+- Implement the Python baseline model  
+- Learn the canonical FSM rules (later used for RTL)  
+- Run simulations:  
+  - Step response  
+  - Fault scenario  
+- Establish the behavioral golden model for hardware translation  
 
 ---
 
-# ▶️ Where to Begin
+# 🧭 FSM Overview
 
-Start with:
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/fsm_state_diagram.svg" width="80%" />
 
-👉 **[index.md](index.md)** — Entry point for Chapter 1 documentation  
+---
+
+# 🔧 Controller Data Flow
+
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/controller_data_flow.svg" width="80%" />
+
+---
+
+# 📈 Step Response Simulation
+
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/step_response_timeline.svg" width="80%" />
+
+---
+
+# ⚠ Fault Scenario Simulation
+
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/fault_timeline.svg" width="80%" />
+
+---
+
+# 🚀 Next Steps
+
+Continue to:
+
+👉 **[overview.md](overview.md)**  
 or  
-👉 **[overview.md](overview.md)** — Conceptual understanding of the architecture
+👉 **[python_model.md](python_model.md)**  
 
 ---
 
