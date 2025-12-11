@@ -1,28 +1,50 @@
 @import "minima";
 
-/* ================================
-   Common utilities
-   ================================ */
-
-/* Center Mermaid diagrams */
-.mermaid {
-  display: block;
-  margin: 1.5rem auto;
-  max-width: 960px;
-  text-align: center;
+/* ========================================
+   Global Typography & Layout
+   ======================================== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: #24292e;
+  background: #fafafa;
+  font-size: 17px;
 }
 
-/* GitHub-like tables (safe even if theme changes) */
+.wrapper {
+  max-width: 900px;
+  padding: 1.5rem;
+}
+
+/* ========================================
+   Mermaid diagrams
+   ======================================== */
+.mermaid {
+  display: block;
+  margin: 2rem auto;
+  max-width: 960px;
+  text-align: center;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ========================================
+   GitHub-like tables
+   ======================================== */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1em 0;
+  margin: 1.5em 0;
   border-spacing: 0;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 th,
 td {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #d0d7de;
   padding: 0.6em 0.8em;
   vertical-align: top;
 }
@@ -32,47 +54,91 @@ th {
   font-weight: 600;
 }
 
-/* Inline code */
+/* ========================================
+   Inline code
+   ======================================== */
 code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
   font-size: 0.95em;
   background: #f6f8fa;
-  border-radius: 3px;
-  padding: 0.1em 0.25em;
-}
-
-/* Code blocks */
-pre {
-  background: #f6f8fa;
   border-radius: 4px;
-  padding: 0.9em 1em;
-  overflow-x: auto;
+  padding: 0.15em 0.35em;
   border: 1px solid #e1e4e8;
 }
 
+/* ========================================
+   Code blocks
+   ======================================== */
+pre {
+  background: #f6f8fa;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  border: 1px solid #d0d7de;
+  line-height: 1.6;
+  position: relative;
+}
+
 pre code {
-  background: transparent;
+  background: none;
   padding: 0;
+  border: none;
 }
 
-/* Blockquotes */
+/* ========================================
+   Blockquotes
+   ======================================== */
 blockquote {
-  margin: 1em 0;
-  padding: 0.6em 0.9em;
-  border-left: 0.25em solid #dfe2e5;
-  color: #586069;
+  margin: 1.2em 0;
+  padding: 0.8em 1em;
+  border-left: 4px solid #d0d7de;
+  color: #57606a;
   background: #f9fafb;
+  border-radius: 4px;
 }
 
-/* Badges (e.g., shields.io) */
+/* ========================================
+   Badges (e.g., shields.io)
+   ======================================== */
 a img[alt*="badge"],
 a img[alt*="Badge"] {
   vertical-align: middle;
 }
 
-/* Lists a bit tighter */
+/* ========================================
+   Lists
+   ======================================== */
 ul,
 ol {
   margin-top: 0.5em;
-  margin-bottom: 0.75em;
+  margin-bottom: 1em;
+  padding-left: 1.4rem;
+}
+
+/* ========================================
+   Links
+   ======================================== */
+a {
+  color: #0969da;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   Responsive tweaks
+   ======================================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .mermaid {
+    padding: 0.5rem;
+  }
 }
