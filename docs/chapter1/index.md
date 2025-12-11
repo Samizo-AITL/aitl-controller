@@ -8,8 +8,16 @@ description: "AITL Silicon Pathway Chapter 1: Python baseline implementation of 
 # 🧩 Chapter 1 — Python Baseline Model  
 ## *AITL Architecture: PID × FSM × LLM*
 
-This chapter introduces the foundational Python model of the AITL control architecture.  
-It also links to all detailed documentation pages of Chapter 1.
+This chapter introduces the foundational Python model of the AITL control architecture  
+and provides links to all Chapter 1 documentation pages.
+
+---
+
+# 🖼️ AITL Architecture Overview
+
+<p align="center">
+  <img src="/aitl-silicon-pathway/docs/chapter1/images/aitl_3layer.svg" width="80%">
+</p>
 
 ---
 
@@ -30,17 +38,49 @@ It also links to all detailed documentation pages of Chapter 1.
 
 - Understand the three-layer AITL architecture  
 - Implement the Python baseline model  
-- Learn the canonical FSM rules (later used for RTL)  
+- Learn canonical FSM rules → later used for RTL Verilog  
 - Run simulations:  
   - Step response  
   - Fault scenario  
-- Establish the behavioral golden model for hardware translation
+- Establish the **behavioral golden model** for hardware translation
+
+---
+
+# 🧭 FSM Overview
+
+<p align="center">
+  <img src="/aitl-silicon-pathway/docs/chapter1/images/fsm_state_diagram.svg" width="80%">
+</p>
+
+---
+
+# 🔧 Controller Data Flow
+
+<p align="center">
+  <img src="/aitl-silicon-pathway/docs/chapter1/images/controller_data_flow.svg" width="80%">
+</p>
+
+---
+
+# 📈 Step Response Simulation
+
+<p align="center">
+  <img src="/aitl-silicon-pathway/docs/chapter1/images/step_response_timeline.svg" width="80%">
+</p>
+
+---
+
+# ⚠️ Fault Scenario Simulation
+
+<p align="center">
+  <img src="/aitl-silicon-pathway/docs/chapter1/images/fault_timeline.svg" width="80%">
+</p>
 
 ---
 
 # 🔗 Next Steps
 
-After reading this index, continue to:
+Proceed to:
 
 👉 **[overview.md](overview.md)**  
 or  
