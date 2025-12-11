@@ -1,143 +1,56 @@
----
-title: "Chapter 1 README"
-layout: default
-nav_order: 0
-description: "Introduction and navigation for AITL Silicon Pathway Chapter 1 documentation."
----
-
 # 📘 Chapter 1 — Python Baseline Model  
-## *README / Introduction*
+*PID × FSM × LLM — Behavioral Golden Model*
 
-Welcome to **Chapter 1** of the *AITL Silicon Pathway* project.  
-This chapter defines the **software baseline model** of the AITL hybrid control architecture:
+This directory contains all documentation for **Chapter 1** of the *AITL Silicon Pathway* project.
 
-- **PID** — Real-time continuous controller  
-- **FSM** — Supervisory mode and fault logic  
-- **LLM** — Adaptive intelligence (placeholder in this chapter)
-
-The Python implementation created here acts as the **behavioral golden model** for all downstream chapters:
+Chapter 1 establishes the **Python baseline model**, which becomes the golden reference for all downstream hardware flows:
 
 ```
-Python → Verilog RTL → OpenLane P&R → Magic Extraction → SPICE
+Python → Verilog RTL → OpenLane → Magic RC Extraction → SPICE
 ```
-
-Everything implemented in Chapter 1 must be faithfully replicated in hardware.
 
 ---
 
-# 📂 Documents Included in Chapter 1
+# 📂 Documentation Contents
 
 | File | Description |
 |------|-------------|
-| `index.md` | Entry page for Chapter 1 |
-| `overview.md` | Conceptual overview of the AITL architecture |
-| `python_model.md` | Detailed breakdown of PID/FSM/Controller implementation |
-| `fsm.md` | Canonical supervisory state machine specification |
-| `api.md` | Documentation for all public-facing classes and APIs |
-| `getting_started.md` | How to install, run, and simulate the Python baseline |
+| [index.md](index.md) | Chapter 1 entry page |
+| [overview.md](overview.md) | Conceptual explanation of the AITL architecture |
+| [python_model.md](python_model.md) | Technical breakdown of PID/FSM/Controller code |
+| [fsm.md](fsm.md) | Canonical FSM specification (authoritative) |
+| [api.md](api.md) | Public API reference of Chapter1 components |
+| [getting_started.md](getting_started.md) | Setup & simulation guide |
 
 ---
 
-# 🧱 Purpose of Chapter 1
+# 🧭 Overview
 
-The goals of this chapter:
+The Python model defines:
 
-- Establish a **deterministic, well-defined control model**
-- Provide a **canonical specification** for the supervisory FSM
-- Create simulation tools for:
-  - step response  
-  - fault behavior  
-- Produce artifacts necessary for RTL design (Chapter 2)
-- Form the **reference behavior** that all hardware must match
+- **PID** — real-time continuous control  
+- **FSM** — supervisory mode management  
+- **LLM** — adaptive intelligence (placeholder in this chapter)  
 
-This ensures end-to-end correctness from software to silicon.
+These components form the hybrid architecture that will later be expressed in hardware.
 
----
+This chapter produces:
 
-# 🧩 AITL Architecture Summary
-
-**Three-layer model:**
-
-1. **PID Layer**  
-   - Real-time continuous control  
-   - Executes only in STARTUP/RUN  
-   - Disabled in IDLE/FAULT
-
-2. **FSM Layer**  
-   - Supervisory logic  
-   - Exact transitions:  
-     ```
-     IDLE → STARTUP → RUN → FAULT → IDLE
-     ```
-
-3. **LLM Layer**  
-   - Adaptive tuning (stub in this chapter)
+- A reproducible PID/FSM model  
+- Executable simulation scripts  
+- Canonical FSM state rules  
+- Golden outputs for RTL comparison  
 
 ---
 
-# 🛠 Python Model Directory Structure
+# ▶️ Where to Begin
 
-The Python reference implementation (outside docs/) follows:
+Start with:
 
-```
-chapter1_python_model/
-├── src/
-│   ├── pid.py
-│   ├── fsm.py
-│   ├── aitl_controller.py
-│   └── llm_placeholder.py
-├── sim/
-├── plots/
-├── tests/
-├── main.py
-└── requirements.txt
-```
-
----
-
-# ▶️ Running Simulations
-
-To run step response:
-
-```bash
-python sim/run_step_response.py
-```
-
-To run fault scenario:
-
-```bash
-python sim/run_fault_scenario.py
-```
-
-Plots will appear under:
-
-```
-plots/
-```
-
----
-
-# 🔗 Relationship to Later Chapters
-
-| Chapter | Output |
-|---------|--------|
-| **Chapter 1** | Python behavioral golden model |
-| **Chapter 2** | FSM → Verilog RTL |
-| **Chapter 3** | ASIC physical design (OpenLane) |
-| **Chapter 4** | Parasitic extraction (Magic) |
-| **Chapter 5** | SPICE timing & waveform analysis |
-
-If Chapter 1 is incorrect or incomplete, **hardware will not match specification**.  
-Therefore this chapter has the strictest correctness requirement.
-
----
-
-# 📜 License
-
-This documentation is part of the AITL Silicon Pathway project.  
-See the main repository license page for details.
+👉 **[index.md](index.md)** — Entry point for Chapter 1 documentation  
+or  
+👉 **[overview.md](overview.md)** — Conceptual understanding of the architecture
 
 ---
 
 # © AITL Silicon Pathway Project
-
