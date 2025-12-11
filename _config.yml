@@ -6,8 +6,8 @@ lang: en
 url: "https://samizo-aitl.github.io"
 baseurl: "/aitl-silicon-pathway"   # If publishing at root, set "".
 
-# Theme
-theme: minima
+# Theme (DISABLED to use custom layout)
+# theme: minima
 
 # Build settings
 markdown: kramdown
@@ -29,7 +29,7 @@ relative_links:
   enabled: true
   collections: true
 
-# Remove unnecessary files from being published
+# Remove unnecessary files from publishing
 exclude:
   - "README.md"
   - "Gemfile"
