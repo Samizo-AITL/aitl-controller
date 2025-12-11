@@ -1,3 +1,8 @@
+---
+layout: default
+title: aitl-silicon-pathway
+---
+
 # **AITL Silicon Pathway**  
 ### *AI × Control × Digital Circuits × Semiconductor Education Project*
 
