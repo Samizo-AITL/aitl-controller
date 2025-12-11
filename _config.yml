@@ -1,12 +1,48 @@
-title: aitl-silicon-pathway
-description: Educational project that explores the AITL control architecture
+title: "AITL Silicon Pathway"
+description: "Educational project exploring the AITL control architecture (PID × FSM × LLM) and its silicon implementation pipeline."
 lang: en
 
+# GitHub Pages URL settings
 url: "https://samizo-aitl.github.io"
-baseurl: "/aitl-silicon-pathway"   # Project site. If publishing at root, set this to "".
+baseurl: "/aitl-silicon-pathway"   # If publishing at root, set "".
 
+# Theme
 theme: minima
 
+# Build settings
 markdown: kramdown
+
 kramdown:
   input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+  math_engine: mathjax
+  parse_block_html: true
+
+# Ensure MathJax renders properly
+kramdown-mathjax:
+  mathjax_js: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+
+# Enable relative links & site structure consistency
+relative_links:
+  enabled: true
+  collections: true
+
+# Remove unnecessary files from being published
+exclude:
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+# Sass / SCSS
+sass:
+  style: compressed
+
+# Permalinks
+permalink: pretty
+
+# Plugins (GitHub Pages-safe)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
