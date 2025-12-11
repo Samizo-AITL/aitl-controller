@@ -1,55 +1,57 @@
-# AITL Silicon Pathway  
-エイトル・シリコン・パスウェイ  
-AI × 制御 × デジタル回路 × 半導体教育プロジェクト
+# **AITL Silicon Pathway**  
+### *AI × Control × Digital Circuits × Semiconductor Education Project*
 
 ---
 
-## 📘 概要 / Overview
-**AITL Silicon Pathway** は、AITL（三層制御アーキテクチャ：PID × FSM × LLM）を  
-Python → Verilog (RTL) → OpenLane → GDSII → SPICE（ngspice）  
-という“シリコンへの道（Pathway）”として体系的に学ぶ教育プロジェクトです。
+## 📘 **Overview**
 
-制御工学・デジタル回路・半導体物理設計・AIを  
-一連のストーリーとして結びつけることを目標としています。
+**AITL Silicon Pathway** is an educational project that systematically explores how the AITL control architecture  
+(**PID × FSM × LLM**) can be implemented and studied along a complete “pathway to silicon”:
 
----
+**Python → Verilog (RTL) → OpenLane → GDSII → SPICE (ngspice)**
 
-## 📚 章構成 / Chapters
-
-### **第1章：AITL 制御アーキテクチャ（Python）**  
-PID / FSM / LLM の三層構造を Python で実装し、制御モデルの基礎を学ぶ。
-
-### **第2章：FSM の RTL 化（Verilog）**  
-Python の FSM を Verilog RTL に翻訳し、ASIC 化の入り口を学ぶ。
-
-### **第3章：RTL → ASIC（OpenLane）**  
-OpenLane を用いて論理合成・配置配線・GDSII 生成を行う。
-
-### **第4章：レイアウト抽出（Magic）**  
-Magic による parasitic（RC）抽出、SPICE ネットリスト生成。
-
-### **第5章：波形解析（ngspice）**  
-実レイアウトに基づいた遅延・波形・電力挙動を可視化する。
+The objective is to connect control engineering, digital circuit design, semiconductor physical design,  
+and AI-driven modeling into one coherent learning framework.
 
 ---
 
-## 🚀 目的 / Goals
-- Python の制御モデルがシリコン上でどのように実現されるか理解する  
-- デジタル・アナログ混在設計の基礎を体験する  
-- AITL アーキテクチャをハードウェア観点から理解する  
+## 📚 **Chapter Structure**
+
+### **Chapter 1: AITL Control Architecture in Python**  
+Implement the three-layer AITL architecture—PID, FSM, and LLM—in Python to build a foundation for hybrid control systems.
+
+### **Chapter 2: RTL Conversion of the FSM (Verilog)**  
+Translate the Python-based FSM into synthesizable Verilog RTL and learn practical principles of hardware state machine design.
+
+### **Chapter 3: From RTL to ASIC (OpenLane)**  
+Use OpenLane for logic synthesis, floorplanning, placement & routing, and generate a GDSII layout suitable for fabrication.
+
+### **Chapter 4: Layout Extraction (Magic)**  
+Perform parasitic (RC) extraction and generate an extracted SPICE netlist directly from the physical layout.
+
+### **Chapter 5: Waveform & Timing Analysis (ngspice)**  
+Simulate the extracted netlist in ngspice to analyze real physical effects such as delay, waveform behavior, and power consumption.
 
 ---
 
-## 📂 Progress  
-- [x] リポジトリ作成  
-- [ ] 第1章の教材反映  
-- [ ] 第2章（FSM RTL化）  
-- [ ] 第3章（OpenLane実行）  
-- [ ] 第4章（Magic抽出）  
-- [ ] 第5章（ngspice解析）
+## 🚀 **Goals**
+
+- Understand how a Python control model is realized in silicon  
+- Experience a full digital/ASIC design workflow end-to-end  
+- Deepen system-level understanding of the AITL architecture from a hardware perspective  
 
 ---
 
-## 作者 / Author
-Samizo-AITL  
+## 📂 **Progress**
 
+- [x] Repository initialized  
+- [ ] Chapter 1 content implementation  
+- [ ] Chapter 2: FSM → Verilog RTL  
+- [ ] Chapter 3: OpenLane workflow  
+- [ ] Chapter 4: Magic parasitic extraction  
+- [ ] Chapter 5: ngspice timing/power analysis  
+
+---
+
+## 👤 **Author**
+**Samizo-AITL**
