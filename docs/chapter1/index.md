@@ -8,16 +8,8 @@ description: "AITL Silicon Pathway Chapter 1: Python baseline implementation of 
 # 🧩 Chapter 1 — Python Baseline Model  
 ## *AITL Architecture: PID × FSM × LLM*
 
-This chapter introduces the foundational Python model of the AITL control architecture  
-and provides links to all Chapter 1 documentation pages.
-
----
-
-# 🖼️ AITL Architecture Overview
-
-<p align="center">
-  <img src="/aitl-silicon-pathway/docs/chapter1/images/aitl_3layer.svg" width="80%">
-</p>
+This chapter introduces the foundational Python model of the AITL control architecture.  
+It also links to all detailed documentation pages of Chapter 1.
 
 ---
 
@@ -38,53 +30,45 @@ and provides links to all Chapter 1 documentation pages.
 
 - Understand the three-layer AITL architecture  
 - Implement the Python baseline model  
-- Learn canonical FSM rules → later used for RTL Verilog  
+- Learn the canonical FSM rules (later used for RTL)  
 - Run simulations:  
   - Step response  
   - Fault scenario  
-- Establish the **behavioral golden model** for hardware translation
+- Establish the behavioral golden model for hardware translation  
 
 ---
 
 # 🧭 FSM Overview
 
-<p align="center">
-  <img src="/aitl-silicon-pathway/docs/chapter1/images/fsm_state_diagram.svg" width="80%">
-</p>
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/fsm_state_diagram.svg" width="80%" />
 
 ---
 
 # 🔧 Controller Data Flow
 
-<p align="center">
-  <img src="/aitl-silicon-pathway/docs/chapter1/images/controller_data_flow.svg" width="80%">
-</p>
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/controller_data_flow.svg" width="80%" />
 
 ---
 
 # 📈 Step Response Simulation
 
-<p align="center">
-  <img src="/aitl-silicon-pathway/docs/chapter1/images/step_response_timeline.svg" width="80%">
-</p>
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/step_response_timeline.svg" width="80%" />
 
 ---
 
-# ⚠️ Fault Scenario Simulation
+# ⚠ Fault Scenario Simulation
 
-<p align="center">
-  <img src="/aitl-silicon-pathway/docs/chapter1/images/fault_timeline.svg" width="80%">
-</p>
+<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/fault_timeline.svg" width="80%" />
 
 ---
 
-# 🔗 Next Steps
+# 🚀 Next Steps
 
-Proceed to:
+Continue to:
 
 👉 **[overview.md](overview.md)**  
 or  
-👉 **[python_model.md](python_model.md)**
+👉 **[python_model.md](python_model.md)**  
 
 ---
 
