@@ -68,9 +68,6 @@ Simulate the extracted netlist in ngspice to analyze real physical effects such 
 
 ## 👤 Author
 
-> Primary developer and author of this educational toolkit.  
-> Professional background in semiconductor devices and inkjet actuators, creating learning materials that integrate theory, simulation, and practical engineering insights.
-
 | 📌 Item | Details |
 |--------|---------|
 | **Name** | Shinichi Samizo |
