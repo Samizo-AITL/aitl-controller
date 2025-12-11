@@ -8,20 +8,23 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="color-scheme" content="light">
 
-  <!-- Open Graph / Twitter cards -->
+  <!-- OGP / Social -->
+  <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:card" content="summary">
 
   <!-- Favicon -->
   <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
 
-  <!-- CSS (cache-busted) -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.scss' | relative_url }}?v={{ site.time | date: '%s' }}">
-  <link rel="stylesheet" href="{{ '/assets/css/aitl.scss' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="{{ '/assets/css/aitl.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
   <!-- MathJax -->
+  {% if page.mathjax != false %}
   <script>
     window.MathJax = {
       tex: {
@@ -36,17 +39,19 @@
     };
   </script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  {% endif %}
 
   <!-- Mermaid -->
+  {% if page.mermaid != false %}
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
     mermaid.initialize({ startOnLoad: true, theme: "default" });
   </script>
+  {% endif %}
 
   {%- include head.html -%}
 </head>
 
-<!-- ▼ 最重要修正：aitl-root を追加 -->
 <body class="aitl-root">
 
   <!-- Header -->
@@ -55,6 +60,7 @@
       <h1 class="site-title">
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </h1>
+
       {% if site.description %}
       <p class="site-description">{{ site.description }}</p>
       {% endif %}
@@ -62,7 +68,7 @@
   </header>
 
   <!-- Main Content -->
-  <main class="main-container wrapper">
+  <main class="wrapper main-container">
     {{ content }}
   </main>
 
@@ -72,8 +78,7 @@
       <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
       <p>
         Built with <a href="https://jekyllrb.com/">Jekyll</a>
-        &nbsp;•&nbsp;
-        AITL Silicon Pathway Custom Theme
+        • AITL Silicon Pathway Custom Theme
       </p>
     </div>
   </footer>
