@@ -13,6 +13,15 @@ The Python implementation here defines the golden reference used for RTL, OpenLa
 
 ---
 
+
+## 🔗 Official Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/aitl-silicon-pathway/chapter1_python_model/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/aitl-silicon-pathway/tree/main/chapter1_python_model) |
+
+---
+
 # 📘 What You Will Learn
 
 - Structure of the AITL 3-Layer Architecture  
