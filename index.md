@@ -58,8 +58,8 @@ The project explores the complete engineering pipeline:
 | **Chapter 1** | [docs/chapter1](/docs/chapter1/index.md) | [/chapter1_python_model](/chapter1_python_model/index.md) | Python baseline model (PID × FSM × LLM) |
 | **Chapter 2** | [docs/chapter2](/docs/chapter2/index.md) |  *none*  | RTL design of FSM (Verilog) |
 | **Chapter 3** | [docs/chapter3](/docs/chapter3/index.md) |  *none*  |  OpenLane ASIC flow (RTL → GDSII) |
-| **Chapter 4** | *(coming soon)*  | *(coming soon)* | Magic extraction → SPICE netlist |
-| **Chapter 5** | *(coming soon)*  | *(coming soon)* | Timing & waveform analysis using ngspice |
+| **Chapter 4** | [docs/chapter4](/docs/chapter4/index.md)  | *(coming soon)* | Magic extraction → SPICE netlist |
+| **Chapter 5** | [docs/chapter5](/docs/chapter5/index.md)  | *(coming soon)* | Timing & waveform analysis using ngspice |
 
 ---
 
