@@ -28,7 +28,7 @@ an end-to-end educational and engineering pipeline connecting:
 |---------|-------------|
 | [Chapter 1 — Python Baseline Model](chapter1/index.md) | PID × FSM × LLM architecture and simulation |
 | [Chapter 2 — RTL Specification](chapter2/index.md) | FSM → Verilog RTL |
-| Chapter 3 — Physical Design (OpenLane) | *(Coming soon — folder created)* |
+| [Chapter 3 — Physical Design](chapter3/index.md) | OpenLane |
 | Chapter 4 — RC Extraction / SPICE | *(Coming soon — folder created)* |
 | Chapter 5 — System Integration | *(Coming soon — folder created)* |
 
