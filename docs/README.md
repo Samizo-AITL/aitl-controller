@@ -18,11 +18,11 @@ This folder contains structured documentation for all chapters of the AITL educa
 
 | Folder | Description |
 |--------|-------------|
-| [chapter1](chapter1/) | Python baseline model (PID × FSM × LLM) |
-| [chapter2](chapter2/) | RTL specification and Verilog translation |
-| [chapter3](chapter3/) | OpenLane physical design (GDSII generation) |
-| [chapter4](chapter4/) | Magic RC extraction & SPICE model |
-| [chapter5](chapter5/) | System-level integration & analysis |
+| [chapter1](chapter1/) | Python baseline FSM model (PID × FSM × LLM reference) |
+| [chapter2](chapter2/) | Formal FSM specification and Verilog RTL implementation |
+| [chapter3](chapter3/) | RTL simulation and ASIC-flow feasibility check (OpenLane, concept level) |
+| [chapter4](chapter4/) | Formal and structural guarantees for FSM correctness (invariants, safety, equivalence) |
+| [chapter5](chapter5/) | Executable verification of FSM correctness (assertions, simulation, equivalence checks) |
 
 ---
 
