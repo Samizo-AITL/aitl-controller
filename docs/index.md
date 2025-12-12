@@ -38,6 +38,7 @@ an end-to-end educational and engineering pipeline connecting:
 
 # 📦 Repository Structure
 
+```
 aitl-silicon-pathway/
 ├─ chapter1_python_model/ ← Python baseline source code
 ├─ docs/ ← Documentation (GitHub Pages)
@@ -47,7 +48,7 @@ aitl-silicon-pathway/
 │ ├─ chapter4/
 │ └─ chapter5/
 └─ README.md ← Repository overview
-
+```
 
 ---
 
