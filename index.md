@@ -84,11 +84,11 @@ docs/
 
 # 🔗 Quick Navigation
 
-- 👉 [Chapter 1 — Python Baseline](./chapter1/index.md)  
-- 👉 [Chapter 2 — FSM to Verilog](./chapter2/README.md)  
-- 👉 [Chapter 3 — OpenLane Flow](./chapter3/README.md)  
-- 👉 [Chapter 4 — Extraction & SPICE](./chapter4/README.md)  
-- 👉 [Chapter 5 — Timing Analysis](./chapter5/README.md)
+- 👉 [Chapter 1 — Python Baseline](/docs/chapter1/index.md)  
+- 👉 [Chapter 2 — FSM to Verilog](/docs/chapter2/index.md)  
+- 👉 [Chapter 3 — OpenLane Flow](/docs/chapter3/index.md)  
+- 👉 [Chapter 4 — Extraction & SPICE](/docs/chapter4/index.md)  
+- 👉 [Chapter 5 — Timing Analysis](/docs/chapter5/index.md)
 
 ---
 
