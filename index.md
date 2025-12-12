@@ -35,10 +35,10 @@ The project explores the complete engineering pipeline:
 | Chapter | GitHub Pages | GitHub Source | Description |
 |--------|--------------|---------------|-------------|
 | **Chapter 1** | [docs/chapter1](/docs/chapter1/index.md) | [/chapter1_python_model](/chapter1_python_model) | Python baseline model (PID × FSM × LLM) |
-| **Chapter 2** | [docs/chapter2](./chapter2/README.md) | *(coming soon)* | RTL design of FSM (Verilog) |
-| **Chapter 3** | [docs/chapter3](./chapter3/README.md) | *(coming soon)* | OpenLane ASIC flow (RTL → GDSII) |
-| **Chapter 4** | [docs/chapter4](./chapter4/README.md) | *(coming soon)* | Magic extraction → SPICE netlist |
-| **Chapter 5** | [docs/chapter5](./chapter5/README.md) | *(coming soon)* | Timing & waveform analysis using ngspice |
+| **Chapter 2** | [docs/chapter2](/docs/chapter2/index.md) | *(coming soon)* | RTL design of FSM (Verilog) |
+| **Chapter 3** | [docs/chapter3](/docs/chapter3/index.md) | *(coming soon)* | OpenLane ASIC flow (RTL → GDSII) |
+| **Chapter 4** | [docs/chapter4](/docs/chapter4/index.md) | *(coming soon)* | Magic extraction → SPICE netlist |
+| **Chapter 5** | [docs/chapter5](/docs/chapter5/index.md) | *(coming soon)* | Timing & waveform analysis using ngspice |
 
 ---
 
