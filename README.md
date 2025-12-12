@@ -57,8 +57,8 @@ Each chapter has its own documentation and code structure.
 | **Chapter 1** | Python Baseline Model (PID × FSM × LLM) | [docs/chapter1](docs/chapter1/index.md) | [`chapter1_python_model`](chapter1_python_model) |
 | **Chapter 2** | FSM → Verilog RTL | [docs/chapter2](docs/chapter2/index.md) |*none*  | 
 | **Chapter 3** | OpenLane Physical Design | [docs/chapter3](docs/chapter3/index.md)| *none* |
-| **Chapter 4** | Magic RC Extraction / SPICE | *(Coming soon)* | *(Coming soon)* |
-| **Chapter 5** | System-Level Timing & Power Analysis | *(Coming soon)* | *(Coming soon)* |
+| **Chapter 4** | Magic RC Extraction / SPICE | [docs/chapter4](docs/chapter4/index.md)| *none* |
+| **Chapter 5** | System-Level Timing & Power Analysis | [docs/chapter5](docs/chapter5/index.md)| *none* |
 
 ---
 
