@@ -21,7 +21,7 @@ This page serves as the root index for all chapters, diagrams, and reference mat
 # 🧭 Full System Pathway
 
 ```mermaid
-flowchart LR
+flowchart TD
     PY[Python Baseline Model]
     SPEC[FSM Specification]
     RTL[Verilog RTL]
