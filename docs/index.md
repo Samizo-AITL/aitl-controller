@@ -27,10 +27,10 @@ an end-to-end educational and engineering pipeline connecting:
 | Chapter | Description |
 |---------|-------------|
 | [Chapter 1 — Python Baseline Model](chapter1/index.md) | PID × FSM × LLM architecture and simulation |
-| [Chapter 2 — RTL Specification](chapter2/index.md) | FSM → Verilog RTL |
-| [Chapter 3 — Physical Design](chapter3/index.md) | OpenLane |
-| [Chapter 4 — RC Extraction / SPICE](chapter4/index.md) | Formal & Structural Guarantees for FSM Correctness |
-| [Chapter 5 — System Integration](chapter5/index.md)  | From FSM Correctness to Executable Verification |
+| [Chapter 2 — RTL Specification](chapter2/index.md) | Formal FSM specification → Verilog RTL |
+| [Chapter 3 — Simulation & ASIC Flow](chapter3/index.md) | RTL simulation and ASIC-flow feasibility check (OpenLane) |
+| [Chapter 4 — FSM Formal Correctness](chapter4/index.md) | Formal & structural guarantees for FSM correctness (invariants, safety, equivalence) |
+| [Chapter 5 — Executable Verification](chapter5/index.md) | From FSM correctness to executable verification (assertions, simulation, equivalence) |
 
 ---
 
