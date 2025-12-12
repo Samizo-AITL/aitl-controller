@@ -22,12 +22,20 @@ This page serves as the root index for all chapters, diagrams, and reference mat
 
 ```mermaid
 flowchart LR
-    PY[Python Baseline Model<br/>(AITL Controller)] --> SPEC[FSM Spec<br/>state table, I/O]
-    SPEC --> RTL[Verilog RTL<br/>(FSM + glue logic)]
-    RTL --> OL[OpenLane Flow<br/>synthesis, P&amp;R]
-    OL --> GDS[GDSII Layout]
-    GDS --> MAGIC[Magic<br/>RC extraction]
-    MAGIC --> SPICE[ngspice<br/>timing &amp; waveform analysis]
+    PY[Python Baseline Model]
+    SPEC[FSM Specification]
+    RTL[Verilog RTL]
+    OL[OpenLane Flow]
+    GDS[GDSII Layout]
+    EXT[RC Extraction]
+    SPICE[SPICE Simulation]
+
+    PY --> SPEC
+    SPEC --> RTL
+    RTL --> OL
+    OL --> GDS
+    GDS --> EXT
+    EXT --> SPICE
 ```
 
 The project explores the complete engineering pipeline:
@@ -52,28 +60,25 @@ The project explores the complete engineering pipeline:
 
 ```mermaid
 flowchart TD
-    SP[Setpoint r(t)] --> E[Error e(t) = r(t) - y(t)]
-    Y[Measured y(t)] --> E
+    R[Reference]
+    E[Error]
+    PID[PID Controller]
+    FSM[FSM Supervisor]
+    PLANT[Plant]
+    Y[Output]
+    LLM[LLM Meta Control]
 
-    E --> PID[PID Controller]
-    PID --> U[Control output u(t)]
-    U --> PLANT[Plant / System]
+    R --> E
+    Y --> E
+    E --> PID
+    PID --> PLANT
     PLANT --> Y
 
-    subgraph FSM[Supervisory FSM Layer]
-        MODE[Mode: IDLE / STARTUP / RUN / FAULT]
-    end
+    FSM --> PID
+    FSM --> PLANT
 
-    MODE -->|enable / disable| PID
-    PLANT -->|status / fault flags| FSM
-
-    subgraph LLM[LLM Layer (Advisor / Redesign)]
-        LOGS[Logs / Telemetry / History]
-    end
-
-    FSM -->|events &amp; traces| LOGS
-    LOGS -->|retune gains Kp, Ki, Kd| PID
-    LOGS -->|update transition rules| FSM
+    LLM -. tuning .-> PID
+    LLM -. policy .-> FSM
 ```
 
 The AITL architecture consists of:
