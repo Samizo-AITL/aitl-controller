@@ -20,6 +20,13 @@ The Python implementation here defines the golden reference used for RTL, OpenLa
 |----------|----------------|-----------|
 | 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/aitl-silicon-pathway/chapter1_python_model/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/aitl-silicon-pathway/tree/main/chapter1_python_model) |
 
+> ⚠ **Diagram Rendering Notice**  
+>  
+> The system pathway diagram above is written in **Mermaid**.  
+> Due to current limitations of **GitHub Pages**, Mermaid diagrams are **not rendered** on this site.  
+>  
+> Please refer to the **GitHub repository view** (linked above) to see the diagram correctly rendered.
+
 ---
 
 # 📘 What You Will Learn
@@ -98,10 +105,47 @@ docs/chapter1/images/
 # 🖼 Key Diagrams (GitHub Pages absolute paths)
 
 ### FSM Overview
-<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/fsm_state_diagram.png" width="80%"/>
+```mermaid
+flowchart TD
+    PY[Python Baseline Model]
+    SPEC[FSM Specification]
+    RTL[Verilog RTL]
+    OL[OpenLane Flow]
+    GDS[GDSII Layout]
+    EXT[RC Extraction]
+    SPICE[SPICE Simulation]
+
+    PY --> SPEC
+    SPEC --> RTL
+    RTL --> OL
+    OL --> GDS
+    GDS --> EXT
+    EXT --> SPICE
+```
 
 ### Controller Data Flow
-<img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/controller_data_flow.png" width="80%"/>
+```mermaid
+flowchart TD
+    R[Reference]
+    E[Error]
+    PID[PID Controller]
+    FSM[FSM Supervisor]
+    PLANT[Plant]
+    Y[Output]
+    LLM[LLM Meta Control]
+
+    R --> E
+    Y --> E
+    E --> PID
+    PID --> PLANT
+    PLANT --> Y
+
+    FSM --> PID
+    FSM --> PLANT
+
+    LLM -. tuning .-> PID
+    LLM -. policy .-> FSM
+```
 
 ### Step Response Simulation
 <img src="https://raw.githubusercontent.com/Samizo-AITL/aitl-silicon-pathway/main/docs/chapter1/images/step_response_timeline.png" width="80%"/>
