@@ -50,8 +50,9 @@ The AITL architecture consists of:
 
 # 📄 Detailed Documentation Structure
 
+```
 docs/
-├─ index.md ← ★ このページ
+├─ index.md 
 ├─ chapter1/
 │ ├─ index.md
 │ ├─ overview.md
@@ -69,7 +70,7 @@ docs/
 ├─ chapter4/
 ├─ chapter5/
 └─ README.md
-
+```
 
 ---
 
