@@ -16,6 +16,13 @@ This page serves as the root index for all chapters, diagrams, and reference mat
 |----------|----------------|-----------|
 | 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/aitl-silicon-pathway/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/aitl-silicon-pathway/tree/main) |
 
+> ⚠ **Diagram Rendering Notice**  
+>  
+> The system pathway diagram above is written in **Mermaid**.  
+> Due to current limitations of **GitHub Pages**, Mermaid diagrams are **not rendered** on this site.  
+>  
+> Please refer to the **GitHub repository view** (linked above) to see the diagram correctly rendered.
+
 ---
 
 # 🧭 Full System Pathway
